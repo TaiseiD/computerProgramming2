@@ -36,6 +36,6 @@ class LabActivity1EmployeeInformationSystem {
         System.out.println("--------------------");
         System.out.println("Employee Name : " + firstName + " " + lastName);
         System.out.println("Age : " + age + " years old");
-        System.out.println("Daily salary: PHP " + roundUpResult);
+        System.out.println("Daily salary : PHP " + roundUpResult);
     }
 }
