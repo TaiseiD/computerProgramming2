@@ -1,4 +1,5 @@
 // Integrating the conditional statements after scanner for constant checking
+// I put else statement, because I think that in every if there's an else
 
 import java.util.Scanner;
 
