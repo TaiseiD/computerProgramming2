@@ -1,3 +1,5 @@
+// Integrating the conditional statements after scanner for constant checking
+
 import java.util.Scanner;
 
 public class LabActivity3ConditionalStatement {
@@ -36,11 +38,41 @@ public class LabActivity3ConditionalStatement {
 
         System.out.print("Enter hours worked : ");
         numberOfHoursWorked = input.nextFloat();
+
+            //To check if Number of hours worked is valid
+            if (numberOfHoursWorked > 24)
+                {
+                    System.out.print("Number of hours worked cannot exceed 24 hours");
+                    System.exit(0);
+                }
+
+            else if (numberOfHoursWorked <= 0)
+                {
+                    System.out.print("Wrong input on daily work hours");
+                    System.exit(0);
+                }
+
+            else 
+                {
+                    //Just to make it more readable
+                }
+
         System.out.print("Enter hourly wage : ");
         hourlyWage = input.nextFloat();
         System.out.print("Enter role code (1-Manager, 2-Supervisor, 3-Staff, 4-Intern) : ");
         employeesJobRole = input.nextInt();
 
+            //For job role, It's much cleaner than if else. This goes first to handle the error before printing out.
+            switch (employeesJobRole) {
+                case 1 -> position = "Manager";
+                case 2 -> position = "Supervisor";
+                case 3 -> position = "Staff";
+                case 4 -> position = "Intern";
+                default -> {
+                    System.out.println("Invalid job role");
+                    System.exit(0);
+                }
+            }
 
         //Formulas, even though i can just put it in the printf, I just want to make it more readable
         name = (lastName + ", " + firstName).toUpperCase();
@@ -58,32 +90,6 @@ public class LabActivity3ConditionalStatement {
             else
             {
                 netYearlySalary = grossYearlySalary - 1500;
-            }
-
-        //To check if Number of hours worked is valid
-        if (numberOfHoursWorked > 24)
-        {
-            System.out.print("Number of hours worked cannot exceed 24 hours");
-            System.exit(0);
-        }
-
-        else if (numberOfHoursWorked <= 0)
-        {
-            System.out.print("Wrong input on daily work hours");
-        }
-
-        else
-        {
-            //For job role, It's much cleaner than if else. This goes first to handle the error before printing out.
-            switch (employeesJobRole) {
-                case 1 -> position = "Manager";
-                case 2 -> position = "Supervisor";
-                case 3 -> position = "Staff";
-                case 4 -> position = "Intern";
-                default -> {
-                    System.out.println("Invalid input");
-                    System.exit(0);
-                }
             }
 
         /*
@@ -104,5 +110,4 @@ public class LabActivity3ConditionalStatement {
         System.out.printf("%-25s PHP %.2f%n","Gross Yearly Salary: ", grossYearlySalary);
         System.out.printf("%-25s PHP %.2f%n","Net Yearly Salary: ", netYearlySalary);
         }
-    }
 }
