@@ -1,0 +1,2 @@
+The javacalculator is the main folder to run the calculator, the png is needed because it's the background of the calculator. the buttons are clear so without png you can't see the calculator.
+the JavaCalculator is the one who's calling the mainCalculator to function.
