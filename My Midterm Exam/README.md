@@ -26,7 +26,7 @@ Each ticket contains the following:
 - **Status** – `Pending`, `In Progress`, or `Resolved`
 
 Stored using 3 parallel arrays:
-```java
+
 String[] issue
 String[] urgency
 String[] status
