@@ -19,43 +19,46 @@ This repository contains a collection of Java projects developed as part of cour
 
 ---
 
-## Lab Activities
+## 📚 Lab Activities
 
-### Lab 1: Basic Input/Output
+### **Lab 1 – Employee Info System (Console)**
+- **File**: `LabActivity1EmployeeInformationSystem.java`
+- **Functionality**: Prompts for first name, last name, age, hours worked, and hourly wage. Calculates and displays daily salary rounded to two decimals.
 
-**Topics:** `Scanner`, `System.out`, variables
+### **Lab 2 – Detailed Salary Breakdown (Console)**
+- **File**: `LabActivity2EmployeeInformationSystemPart2.java`
+- **Features**:
+  - Calculates daily, weekly, monthly, gross yearly.
+  - Computes net yearly salary after 32% tax and ₱1,500 deduction.
+  - Displays years to retirement (age 65) and formatted output with `printf()`.
 
-Simple programs that prompt the user for inputs and display outputs using basic Java syntax.
+### **Lab 3 – Conditional Logic & Role (Console)**
+- **File**: `LabActivity3ConditionalStatement.java`
+- **Enhancements**:
+  - Validates age (18–64), hours (1–24), and job role (1: Manager, 2: Supervisor, 3: Staff, 4: Intern).
+  - Applies tiered tax logic (32% + ₱1,500 if gross > ₱250,000).
+  - Formats output in uppercase and aligned with `printf()`.
 
-### Lab 2: Conditional Statements
+### **Lab 4 – GUI Employee Info (AWT)**
+- **File**: `LabActivity4EmpInfoSystemGUI.java`
+- **Features**:
+  - GUI with `TextField` inputs and `TextArea` output.
+  - Validates name, age, hours, and rate.
+  - Computes and displays daily salary on button click.
 
-**Topics:** `if`, `else`, `switch`
+### **Lab 5 – Quiz App (AWT)**
+- **File**: `LabActivity5QuizAppAWT.java`
+- **Functionality**:
+  - Presents 3 multiple-choice questions.
+  - Radio buttons (`CheckboxGroup`) track selection.
+  - Validates answer selection and displays final score.
 
-Programs that implement decision-making such as grading systems or comparisons using control flow statements.
-
-### Lab 3: Loops and Iteration
-
-**Topics:** `for`, `while`, `do-while`
-
-Exercises involving loops to perform repetitive tasks like printing patterns, counting, or aggregating values.
-
-### Lab 4: Methods and Arrays
-
-**Topics:** functions, arrays, loops
-
-Implemented reusable methods and array manipulation for operations such as summing numbers, finding max/min, or processing data.
-
-### Lab 5: Object-Oriented Programming
-
-**Topics:** `classes`, `objects`, encapsulation
-
-Created custom classes with fields, constructors, and methods to simulate real-world objects.
-
-### Lab 6: GUI To-Do List
-
-**Technologies:** `Swing`, `JTable`, `JFrame`
-
-Created a simple GUI-based To-Do List Manager. Allows adding tasks with name, description, and status using a form. Data is displayed in a table.
+### **Lab 6 – To-Do List Manager (Swing)**
+- **File**: `LabActivity6SwingToDoList.java`
+- **Capabilities**:
+  - Main window (`JTable`) lists tasks.
+  - Pop-up form for task name, description, status.
+  - Supports adding new tasks (Not Started, Ongoing, Completed).
 
 ---
 
