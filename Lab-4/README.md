@@ -51,28 +51,16 @@ Full Name: Juan Dela Cruz
 Age: 30
 Daily Salary: PHP850.00
 
-lua
-Copy
-Edit
-
 If the input is invalid (e.g., a blank field or incorrect value), the output area will show an appropriate error message such as:
 
 Error: All fields must be filled.
 
-Copy
-Edit
 Error: Age must be a whole number.
 
-Copy
-Edit
 Error: Age must be a positive whole number.
 
-Copy
-Edit
 Error: Hours Worked and Hourly Rate must be numeric.
 
-Copy
-Edit
 Error: Hours Worked and Hourly Rate must be a positive number.
 
 ## 🧠 Concepts Applied
