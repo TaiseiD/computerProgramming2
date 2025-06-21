@@ -1,30 +1,146 @@
-Java Programming
+# Java Programming Portfolio
 
-Hi! This repository contains all of the Java programming activities and exams I completed throughout the semester. These projects showcase my understanding of core Java concepts, from basic syntax and console I/O to more complex topics like control structures, arrays, and GUI development using AWT and Swing.
+This repository contains a collection of Java projects developed as part of coursework and personal practice, ranging from basic syntax to GUI applications using Swing. Each lab progressively builds skills in programming logic, user interaction, data structures, and graphical interfaces.
 
-Each activity builds on the previous one, helping me improve my skills incrementally while simulating real-world programming tasks. Below, I’ve written a brief description of each activity or exam I worked on.
+---
 
-Activity 1: Console-Based Employee Information System
-In this first activity, I created a simple Java program that collects employee details such as name, age, hours worked, and hourly wage through user input. The program calculates the daily wage and displays the full name. This helped me get comfortable with Java's syntax, variable declarations, basic data types, and console input/output.
+## 📚 Table of Contents
 
-Activity 2: Advanced Salary Computation
-Building on Activity 1, I added more calculations like retirement years, rounded daily wage, and monthly/yearly salary estimations. I also practiced using Math.abs() and rounding functions. The goal was to apply arithmetic and string operations while improving output formatting and logic flow.
+* [Lab Activities](#lab-activities)
 
-Activity 3: Conditional Statements and Role Assignment
-This activity introduced more decision-making logic. I used if-else statements to validate user input (like age and hours worked) and terminate the program for invalid data. I also implemented a switch statement to assign job roles based on a numeric role code. This taught me how to build more robust, user-aware applications.
+  * [Lab 1: Basic Input/Output](#lab-1-basic-inputoutput)
+  * [Lab 2: Conditional Statements](#lab-2-conditional-statements)
+  * [Lab 3: Loops and Iteration](#lab-3-loops-and-iteration)
+  * [Lab 4: Methods and Arrays](#lab-4-methods-and-arrays)
+  * [Lab 5: Object-Oriented Programming](#lab-5-object-oriented-programming)
+  * [Lab 6: GUI To-Do List](#lab-6-gui-to-do-list)
+* [🧪 Midterm Exam: Java Ticketing System (Console App)](#midterm-exam-java-ticketing-system-console-app)
+* [🏁 Final Exam: Java GUI Calculator (Swing)](#final-exam-java-gui-calculator-swing)
 
-Midterm Lab Exam – Problem-Solving with Arrays and Methods
-For my midterm exam, I created a program that solves a practical problem using Java arrays, loops, and methods. I structured the program with reusable code and logic to meet the requirements outlined in a provided document. This exam tested my ability to design, organize, and implement a complete Java application from scratch.
+---
 
-Activity 4: GUI-Based Employee Info System (AWT)
-This was my first GUI project using Java’s AWT framework. I built a form where users can input employee information, and the program calculates and displays the daily wage. I used layout managers, labels, text fields, and buttons, and I made sure to handle possible input errors during runtime. It was a great introduction to GUI programming.
+## Lab Activities
 
-Activity 5: GUI Quiz Application with AWT
-In this activity, I developed a multiple-choice quiz app that displays one question at a time. I used arrays to store questions and answers, ActionListener to handle button clicks, and radio buttons for answer selection. The app keeps track of the score and displays it at the end, disabling the inputs after completion. This project helped me get more comfortable with event handling and dynamic GUI behavior.
+### Lab 1: Basic Input/Output
 
-Activity 6: To-Do List Application Using Swing (Multi-Window)
-For this activity, I created a two-window application using Java Swing. The main window displays a JTable of tasks, and clicking "Add Task" opens a second window for entering task details. After saving, the task appears in the main table. This project taught me how to manage multiple Swing frames, pass data between them, and use components like dropdowns and text areas effectively.
+**Topics:** `Scanner`, `System.out`, variables
 
-Final Exam – Calculator Application Using Swing
-For the final exam, I developed a fully functional calculator with a graphical interface. It supports basic operations like addition, subtraction, multiplication, division, and modulus, along with more advanced functions like square root and exponentiation and power of. I also included features like delete and clear. It was a great opportunity to combine everything I’d learned about Java Swing and event-driven programming.
+Simple programs that prompt the user for inputs and display outputs using basic Java syntax.
 
+### Lab 2: Conditional Statements
+
+**Topics:** `if`, `else`, `switch`
+
+Programs that implement decision-making such as grading systems or comparisons using control flow statements.
+
+### Lab 3: Loops and Iteration
+
+**Topics:** `for`, `while`, `do-while`
+
+Exercises involving loops to perform repetitive tasks like printing patterns, counting, or aggregating values.
+
+### Lab 4: Methods and Arrays
+
+**Topics:** functions, arrays, loops
+
+Implemented reusable methods and array manipulation for operations such as summing numbers, finding max/min, or processing data.
+
+### Lab 5: Object-Oriented Programming
+
+**Topics:** `classes`, `objects`, encapsulation
+
+Created custom classes with fields, constructors, and methods to simulate real-world objects.
+
+### Lab 6: GUI To-Do List
+
+**Technologies:** `Swing`, `JTable`, `JFrame`
+
+Created a simple GUI-based To-Do List Manager. Allows adding tasks with name, description, and status using a form. Data is displayed in a table.
+
+---
+
+## 🧪 Midterm Exam: Java Ticketing System (Console App)
+
+A ticket tracking system that allows users to:
+
+* Add IT tickets (with issue description and urgency)
+* Update ticket status (Pending, In Progress, Resolved)
+* View all tickets
+* Generate a report summarizing ticket statuses
+
+**Features:**
+
+* Input validation
+* Array-based storage for up to 5 tickets
+* Report generation with status counts
+
+---
+
+## 🏁 Final Exam: Java GUI Calculator (Swing)
+
+This is a **Java Swing-based GUI Calculator** developed using **NetBeans GUI Builder**. It performs standard arithmetic operations and scientific functions.
+
+### 🛠 Features
+
+* Power Button (ON/OFF switch)
+* Basic Operations: `+`, `-`, `*`, `/`, `%`
+* Scientific Functions:
+
+  * Square `x²`
+  * Square Root `√`
+  * Exponentiation `x^y`
+  * Negative Toggle (`±`)
+* Input validation and error messages
+* Clear (`C`) and Delete (`DEL`) buttons
+* Button-only input (no keyboard required)
+
+### 📁 File and Folder Structure
+
+To run the calculator **properly**, follow this structure:
+
+```
+your-folder/
+└── javacalculator/
+    └── javacalculator/
+        ├── JavaCalculator.java      # Launcher for the GUI
+        ├── mainCalculator.java      # Main GUI logic
+        ├── mainCalculator.form      # NetBeans layout file
+        └── background.png           # Required GUI background image
+```
+
+**Note:**
+
+* The calculator uses a background image for layout.
+* All buttons are transparent; without the image, nothing will be visible.
+* Open the **outer javacalculator** folder in NetBeans to run the program.
+
+### ✅ How to Run
+
+1. Place all 4 files in the correct folder hierarchy as shown above.
+2. Open the outer `javacalculator` folder in NetBeans or your preferred IDE.
+3. Compile and run `JavaCalculator.java`.
+
+### 🧪 Example Calculations
+
+* `9 + 3` → 12
+* `5 ^ 2` → 25
+* `√16` → 4
+* `9 % 4` → 1 (Remainder)
+* `-5` → toggled to positive or vice versa
+
+---
+
+## 📌 Requirements
+
+* Java SE 8 or later
+* NetBeans IDE (for `.form` GUI support)
+* No external libraries required
+
+---
+
+## 👨‍💻 Author
+
+**Developed by:** IIseichi
+**Project Type:** Academic Projects (Labs + Exams)
+
+Feel free to explore each project folder to view specific source codes and outputs.
