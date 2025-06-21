@@ -43,21 +43,37 @@ When the user clicks the **Submit** button, the system:
 4. Compile the file: javac LabActivity4EmpInfoSystemGUI.java
 5. Run the program: java LabActivity4EmpInfoSystemGUI
 
-
 ## 📄 Example Output (Text Format)
 
-After filling in the fields and clicking **Submit**, the program will display something like:
+After filling in the fields and clicking **Submit**, the program will display the calculated result in the output area, like this:
 
 Full Name: Juan Dela Cruz
 Age: 30
 Daily Salary: PHP850.00
 
-If the input is invalid (e.g. a blank field or incorrect value), appropriate error messages will appear in the output area such as:
+lua
+Copy
+Edit
+
+If the input is invalid (e.g., a blank field or incorrect value), the output area will show an appropriate error message such as:
 
 Error: All fields must be filled.
+
+Copy
+Edit
 Error: Age must be a whole number.
+
+Copy
+Edit
+Error: Age must be a positive whole number.
+
+Copy
+Edit
 Error: Hours Worked and Hourly Rate must be numeric.
 
+Copy
+Edit
+Error: Hours Worked and Hourly Rate must be a positive number.
 
 ## 🧠 Concepts Applied
 
